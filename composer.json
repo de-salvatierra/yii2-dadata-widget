@@ -1,0 +1,45 @@
+{
+	"name": "urichalex/yii2-dadata-widget",
+	"description": "Yii2 Dadata Widget",
+	"keywords": ["yii2", "yii 2", "Dadata"],
+	"minimum-stability": "stable",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Alexander Urich",
+			"email": "urichalex@mail.ru"
+		}
+	],
+	"require": {
+		"php": "~7.4",
+		"yiisoft/yii2": "~2.0.10"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"urichalex\\yii2Dadata\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"urichalex\\yii2Dadata\\tests\\": "tests/"
+		}
+	},
+	"config": {
+		"sort-packages": true,
+		"fxp-asset": {
+			"enabled": false
+		},
+		"allow-plugins": {
+			"yiisoft/yii2-composer": true
+		}
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	]
+}

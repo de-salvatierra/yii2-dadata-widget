@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 7.4
+  - 8.0
+  - 8.1
+
+install:
+  - composer self-update
+  - composer install --no-interaction --prefer-source --dev
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer install --no-interaction --prefer-source --dev
+
+script:
+  - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
